@@ -15,9 +15,7 @@ const assertArrayEqual = function(given, needed) {
   if (arraysEqual) {
     console.log(`😊Assertion Passed: [${given}] === [${needed}]`);
   } else {
-    console.log(`😢Assertion Failed: ${given} !== ${needed}`);
+    console.log(`😢Assertion Failed: [${given}] !== [${needed}]`);
   }
 };
-
-assertArrayEqual([1, 2], [1, 2, 3]);
-
+assertArrayEqual([1, 2, 3], [1, 2, 3]);
