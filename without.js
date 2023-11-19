@@ -16,11 +16,9 @@ const without = function(source, remove) {
   for (let i = 0; i < source.length; i++) {
     for (let j = 0; j < remove.length; j++) {
       if (source[i] === remove[j]) {
-
         numberToRemoved = true;
       }
     }
-   
     if (numberToRemoved === false) {
       newArr.push(source[i]);
     }
