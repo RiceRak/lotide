@@ -20,9 +20,13 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const middle = function(arr) {
+  let noMid = []
   let midElement = [];
   let midIndex = 0;
-  if (arr.length % 2 === 0) {
+  if (arr.length < 3) {
+    return noMid;
+  }
+  else if (arr.length % 2 === 0) {
     midIndex = Math.floor(arr.length / 2);
     midElement.push(arr[midIndex - 1]);
     midElement.push(arr[midIndex]);
@@ -32,6 +36,7 @@ const middle = function(arr) {
   }
   return midElement;
 };
+console.log(middle([1, 2]));
 console.log(middle([1, 2, 3, 4, 5, 6, 7]));
 console.log(middle([1, 2, 3, 4, 5, 6]));
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
