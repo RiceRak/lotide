@@ -14,9 +14,7 @@ const countOnly = function(allItems, itemsToCount) {
   
   for (const item of allItems) {
     if (itemsToCount[item]) {
-      //What code do we want to execute in here?
       //we want to add they key into the results object and start counting how many times that name appears
-      //let cookie = undefined
       if (results[item] !== undefined) {
         results[item] += 1;
       } else {
@@ -24,12 +22,7 @@ const countOnly = function(allItems, itemsToCount) {
       }
       
     }
-    // if (results[item]) {
-    //   results[item] += 1;
-    // } else {
-    //   results[item] = 1;
-    // }
-    
+  
     
   }
   return results;
