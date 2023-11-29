@@ -24,12 +24,12 @@ const assertArrayEqual = function(given, needed) {
   }
 };
 const map = function(array, callback) {
-const results = [];
+  const results = [];
   for (let item of array) {
-results.push(callback(item));
- }
-return results;
-}
+    results.push(callback(item));
+  }
+  return results;
+};
 
 const result1 = map(words, word => word[0]);
 console.log(result1);
