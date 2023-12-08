@@ -1,5 +1,6 @@
 function tail(actual) {
-  myArr = actual.slice(1);
+  console.log('actual', actual);
+  const myArr = actual.slice(1);
   return myArr;
 }
 

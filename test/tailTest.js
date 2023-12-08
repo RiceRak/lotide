@@ -1,10 +1,20 @@
 const tail = require('../tail')
-const assertEqual = require('../assertEqual')
+const assert = require('chai').assert;
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-assertEqual(tail(words)[0], "Lighthouse") // first element of returned array should be second element of argument array
-assertEqual(tail(words).length, words.length - 1) // tail should have one element less than its input
-assertEqual(tail(["test"]).length, 0) // tail of array with one element only should be empty
-assertEqual(tail([]).length, 0) // tail of an empty array should also be empty
+describe("#tail", () => {
+  it("should return [1, 2, 3] for [1, 2, 3]", () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
+  it('should return ["Yo Yo", "Lighthouse", "Labs"] for ["Yo Yo", "Lighthouse", "Labs"]', () => {
+    assert.deepEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
+  it("should return an empty array when argument array is also empty", () => {
+    assert.deepEqual(tail([]), []);
+  });
+  it("should return an empty array when the argument array has one element", () => {
+    assert.deepEqual(tail(['test']).length, 0);
+  });
+  it('should return "Lighthouse" for ["Yo Yo", "Lighthouse", "Labs"]', () => {
+    assert.deepEqual(tail(["Yo Yo", "Lighthouse", "Labs"])[0], "Lighthouse");
+  });
+});
