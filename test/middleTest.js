@@ -11,4 +11,10 @@ describe("#middle", () => {
   it("should return [] when argument array has only two elements", () => {
     assert.deepEqual(middle([1, 2]), []);
   });
+  it("argument array was not altered by the middle function", () => {
+    const words = ["hello", "world", "lighthouse"];
+    const result = middle(words);
+    assert.deepEqual(result, ["world"]);
+    assert.strictEqual(words.length, 3);
+  });
 });
