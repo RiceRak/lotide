@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@srl-rak/lotide",
   "version": "1.0.0",
   "description": "A mini clone of the [Lodash](https://lodash.com) library.",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/RiceRak/lotide.git"
   },
-  "author": "",
+  "author": "Shadrak Lagadi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RiceRak/lotide/issues"
