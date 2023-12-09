@@ -1,3 +1,5 @@
+// takes in a sentence and returns a count of each of the letters in the sentence
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`😊Assertion Passed: ${actual} === ${expected}`);

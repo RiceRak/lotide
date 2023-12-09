@@ -1,6 +1,4 @@
-/* Our map function will take in two arguments:
-1) An array to map
-2) A callback function*/
+// takes in an array and a callback and returns a new array based on the results of the callback on each item in the array
 
 const words = ["Keyboard", "Chair", "Table", "Window", "Balloon", "Door"];
 const eqArrays = function(arr1, arr2) {

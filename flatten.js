@@ -1,3 +1,24 @@
+
+// takes in an array that contains elements including nested array of elements and returns a flattened version of the array
+
+const flatten = function(arr) {
+  let flattened = [];
+  for (let i = 0; i < arr.length; i++) {
+    console.log("This is the element we are on:", arr[i]);
+    if (Array.isArray(arr[i])) {
+      // console.log("Array found:", arr[i]);
+      for (let j = 0; j < arr[i].length; j++) {
+        console.log("This is the element we are on in the nested array:", arr[i][j]);
+        flattened.push(arr[i][j]);
+        console.log("This is what we pushed to flattned from the nested array:", arr[i][j]);
+      }
+    } else {
+      flattened.push(arr[i]);
+    }
+  }
+  return flattened;
+};
+
 const assertArraysEqual = function(given, needed) {
   const arraysEqual = eqArrays(given, needed);
   if (arraysEqual) {
@@ -18,27 +39,6 @@ const eqArrays = function(arr1, arr2) {
   }
   return true;
 };
-
-
-const flatten = function(arr) {
-  let flattened = [];
-  for (let i = 0; i < arr.length; i++) {
-    console.log("This is the element we are on:", arr[i]);
-    if (Array.isArray(arr[i])) {
-      // console.log("Array found:", arr[i]);
-      for (let j = 0; j < arr[i].length; j++) {
-        console.log("This is the element we are on in the nested array:", arr[i][j]);
-        flattened.push(arr[i][j]);
-        console.log("This is what we pushed to flattned from the nested array:", arr[i][j]);
-      }
-    } else {
-      flattened.push(arr[i]);
-    }
-  }
-  return flattened;
-};
-
-
 
  
 console.log(flatten([1, 2, [3, 4], 5, [6]]));

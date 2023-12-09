@@ -1,3 +1,5 @@
+// takes in 2 objects and returns true if they are equal and false otherwise
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;

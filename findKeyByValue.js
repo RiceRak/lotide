@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😊Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😢Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// takes in an object and a value and returns the first key that corresponds to that value
 
 const findKeyByValue = function(searchObject, searchValue) {
   
@@ -14,6 +8,14 @@ const findKeyByValue = function(searchObject, searchValue) {
     }
   }
   return undefined;
+};
+
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`😊Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`😢Assertion Failed: ${actual} !== ${expected}`);
+  }
 };
 
 

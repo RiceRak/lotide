@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😊Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😢Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// takes in an object and callback and returns the first key that meets the criteria specified in callback
 
 const findKey = function(object, callback) {
   for (const key of Object.keys(object)) {
@@ -14,6 +8,14 @@ const findKey = function(object, callback) {
     }
   }
   return undefined;
+};
+
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`😊Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`😢Assertion Failed: ${actual} !== ${expected}`);
+  }
 };
 
 const result = findKey({

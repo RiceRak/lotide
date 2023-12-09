@@ -1,6 +1,6 @@
+// prints a pass or fail message after comparing two arrays for matching
+
 const eqArrays = require("./eqArrays");
-
-
 
 const assertArraysEqual = function(given, needed) {
   const arraysEqual = eqArrays(given, needed);

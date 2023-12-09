@@ -1,11 +1,10 @@
-// createa function called "head"
-// the head function should NOT return the first element as an array. It should return just the element.
-// an emtpy array should return undefined
-module.exports = head;
+// finds the first element of an array
 
-function head(actual) {
+const head = function(actual) {
   if (actual.length === 0) {
     return undefined;
-  }   
- return actual[0];
-}
+  }
+  return actual[0];
+};
+
+module.exports = head;

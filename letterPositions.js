@@ -1,3 +1,20 @@
+// takes in a string and returns all indices of letter positions in the string
+
+const letterPositions = function(sentence) {
+  let results = {};
+  for (let i = 0; i < sentence.length; i++) {
+    const element = sentence[i];
+    if (element !== " ") {
+      if (!results[element]) {
+        results[element] = [i];
+      } else {
+        results[element].push(i);
+      }
+    }
+  }
+  return results;
+};
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -17,21 +34,6 @@ const assertArrayEqual = function(given, needed) {
   } else {
     console.log(`😢Assertion Failed: [${given}] !== [${needed}]`);
   }
-};
-
-const letterPositions = function(sentence) {
-  let results = {};
-  for (let i = 0; i < sentence.length; i++) {
-    const element = sentence[i];
-    if (element !== " ") {
-      if (!results[element]) {
-        results[element] = [i];
-      } else {
-        results[element].push(i);
-      }
-    }
-  }
-  return results;
 };
 
 assertArrayEqual(letterPositions("hello").l, [2, 3]);

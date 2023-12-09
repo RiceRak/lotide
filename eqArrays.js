@@ -1,4 +1,6 @@
-const eqArrays = function(arr1, arr2){
+// takes in 2 arrays and returns true if the arrays are equal in length and false otherwise
+
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -8,5 +10,5 @@ const eqArrays = function(arr1, arr2){
     }
   }
   return true;
-}
+};
 module.exports = eqArrays;

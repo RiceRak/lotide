@@ -1,3 +1,17 @@
+// takes in an array and callback and returns a slice of the array based on the criteria specified in the callback
+
+const takeUntil = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    if (callback(item)) {
+      return results;
+    } else {
+      results.push(item);
+    }
+  }
+  return results;
+};
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -17,18 +31,6 @@ const assertArrayEqual = function(given, needed) {
   } else {
     console.log(`😢Assertion Failed: [${given}] !== [${needed}]`);
   }
-};
-
-const takeUntil = function(array, callback) {
-  const results = [];
-  for (let item of array) {
-    if (callback(item)) {
-      return results;
-    } else {
-      results.push(item);
-    }
-  }
-  return results;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];

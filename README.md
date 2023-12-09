@@ -43,5 +43,5 @@ The following functions are currently implemented:
 * `map(...)`: takes in an array and a callback and returns a new array based on the results of the callback on each item in the array
 * `middle(...)`: takes in an array and returns middle most element of the array
 * `tail(...)`: takes in an array and returns everything except the first element
-* `takeUntil(...)`: that takes in an array and callback and returns a slice of the array based on the criteria specified in the callback
+* `takeUntil(...)`: takes in an array and callback and returns a slice of the array based on the criteria specified in the callback
 * `without(...)`: takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array

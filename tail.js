@@ -1,9 +1,9 @@
-function tail(actual) {
+// takes in an array and returns everything except the first element
+
+const tail = function(actual) {
   console.log('actual', actual);
   const myArr = actual.slice(1);
   return myArr;
-}
+};
 
 module.exports = tail;
-
-// Test Case: Check the original array -- moved to /test/tailTest.js
