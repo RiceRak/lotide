@@ -21,6 +21,7 @@ const countLetters = function(sentence) {
   return letterCount;
 };
 
+module.exports = countLetters;
 const result = countLetters('lighthouse in the house');
 assertEqual(result['h'], 4);
 assertEqual(result['e'], 3);
