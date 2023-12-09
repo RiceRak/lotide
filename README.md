@@ -26,20 +26,22 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `head(...)`: finds the head of an array
-* `tail(...)`: finds the tail of an array
-* `middle(...)`: finds the middle element of an array
-* `assertArraysEqual(...)`: asserts if two arrays are equal
-* `assertEqual(...)`: asserts if two values are equal
-* `assertObjectsEqual(...)`: asserts if two objects are equal
-* `countLetters(...)`: counts and tracks how many times a letter is used in an argument
-* `countOnly(...)`: counts how many times a string shows up in an argument
-* `eqArrays(...)`: counts if an array has the same length
-* `eqObjects(...)`: examines two objects to see if they are the same
-* `findKey(...)`: finds the key in an object if given the properties in a nest object
-* `findKeyByValue(...)`: finds the key in an object if given the properties
-* `flatten(...)`: takes a nested array and returns a single array with each element in order
-* `letterPositions(...)`: finds the positions of a letter in a string and returns an array with positions
-* `map(...)`: returns a map of first letters of an array of strings
-* `takeUntil(...)`: takes the data in a given array and returns a new array only until the value that is in the argument
-* `without(...)`: returns a new array after looking at a given array without the value that is in the argument
+
+
+* `assertArraysEqual(...)`: prints a pass or fail message after comparing two arrays for matching
+* `assertEqual(...)`: takes in 2 values and returns true if they are equal and false otherwise
+* `assertObjectsEqual(...)`: takes in 2 objects and returns true if they are equal and false otherwise
+* `countLetters(...)`: takes in a sentence and returns a count of each of the letters in the sentence
+* `countOnly(...)`: takes in a collection of items and returns a specific subset of those items
+* `eqArrays(...)`: takes in 2 arrays and returns true if the arrays are equal in length and false otherwise
+* `eqObjects(...)`: takes in 2 objects and return true if they are equal and false otherwise
+* `findKey(...)`: takes in an object and callback and returns the first key that meets the criteria specified in callback
+* `findKeyByValue(...)`: takes in an object and a value and returns the first key that corresponds to that value
+* `flatten(...)`: takes in an array that contains elements including nested array of elements and returns a flattened version of the array
+* `head(...)`: finds the first element of an array
+* `letterPositions(...)`: takes in a string and returns all indices of letter positions in the string
+* `map(...)`: takes in an array and a callback and returns a new array based on the results of the callback on each item in the array
+* `middle(...)`: takes in an array and returns middle most element of the array
+* `tail(...)`: takes in an array and returns everything except the first element
+* `takeUntil(...)`: that takes in an array and callback and returns a slice of the array based on the criteria specified in the callback
+* `without(...)`: takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array
