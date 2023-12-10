@@ -18,6 +18,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+
+
+
 const result = findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },

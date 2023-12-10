@@ -26,6 +26,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+
+
+
 const firstNames = [
   "Karl",
   "Salima",

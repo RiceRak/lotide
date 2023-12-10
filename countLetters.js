@@ -1,13 +1,5 @@
 // takes in a sentence and returns a count of each of the letters in the sentence
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😊Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😢Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const countLetters = function(sentence) {
   let letterCount = {};
   
@@ -23,7 +15,19 @@ const countLetters = function(sentence) {
   return letterCount;
 };
 
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`😊Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`😢Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
 module.exports = countLetters;
+
+
+
+
 const result = countLetters('lighthouse in the house');
 assertEqual(result['h'], 4);
 assertEqual(result['e'], 3);
